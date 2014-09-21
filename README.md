@@ -1,15 +1,15 @@
 清影PT Android客户端
 ===================================
-清影PT：https://pt.hit.edu.cn/
-清影PT Android客户端介绍：https://pt.hit.edu.cn/android/
-使用请注明来自[清影PT PPOffice](http://pt.hit.edu.cn/userdetails.php?id=1166)
+清影PT：https://pt.hit.edu.cn/<br />
+清影PT Android客户端介绍：https://pt.hit.edu.cn/android/<br />
+使用请注明来自[清影PT PPOffice](http://pt.hit.edu.cn/userdetails.php?id=1166)<br />
 
 依赖
 -----------------------------------
-*[SwipeBackLayout](https://github.com/Issacw0ng/SwipeBackLayout)
-*[LiteHttp](https://github.com/litesuits/android-lite-http)
-*[LiteOrm](https://github.com/litesuits/android-lite-orm)
-*内已附带Google Zxing，如有需求请自行替换新版本
+*[SwipeBackLayout](https://github.com/Issacw0ng/SwipeBackLayout)<br />
+*[LiteHttp](https://github.com/litesuits/android-lite-http)<br />
+*[LiteOrm](https://github.com/litesuits/android-lite-orm)<br />
+*内已附带Google Zxing，如有需求请自行替换新版本<br />
 
 说明
 -----------------------------------
