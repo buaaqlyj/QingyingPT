@@ -1,0 +1,250 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:focusable="true"   
+	android:focusableInTouchMode="true">
+	
+    <ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/head_layout"
+		android:layout_marginTop="-3dip"
+   		android:background="@color/bg_color_iron"
+   		style="@style/svVerticalBars">
+			    
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dip">
+			
+			<LinearLayout
+				android:id="@+id/rlChangeAvatar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/bg_border"
+				android:layout_marginBottom="10dip"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+			
+				<LinearLayout
+				    android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/list_item"
+					android:gravity="center_vertical"
+					android:padding="10dip"
+				    android:orientation="horizontal" >
+		
+					<ImageView
+						android:id="@+id/ivUserAvatar"
+						android:layout_width="@dimen/avatar"
+			            android:layout_height="@dimen/avatar"
+						android:src="@drawable/default_avatar" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/text_color_dark"
+						android:layout_marginLeft="10dip"
+						android:text="@string/change_avatar" />
+	
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+	
+						<ImageView
+							android:layout_width="20dip"
+							android:layout_height="20dip"
+							android:src="@drawable/arrow_right" />
+				        
+					</LinearLayout>
+					
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+	    		android:background="@drawable/bg_border">
+			
+				<LinearLayout
+					android:id="@+id/rlGender"
+					android:layout_width="match_parent"
+	                android:layout_height="44dip"
+                	android:background="@drawable/list_item"
+					android:padding="10dip"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+						
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/text_color_dark"
+						android:text="@string/gender" />
+	
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+						
+						<TextView
+						    android:id="@+id/tvGender"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="@color/text_color_grey"
+							android:textSize="12sp" />
+				        
+					</LinearLayout>
+					
+				</LinearLayout>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.1dp"
+					android:background="@color/border_grey" />
+				
+				<LinearLayout
+					android:id="@+id/rlCountry"
+					android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:background="@drawable/list_item"
+					android:padding="10dip"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+						
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/text_color_dark"
+						android:text="@string/country" />
+	
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical|right" >
+						
+						<ImageView
+						    android:id="@+id/ivCountry"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="10dip"
+							android:visibility="gone" />
+						
+						<TextView
+						    android:id="@+id/tvCountry"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="@color/text_color_grey"
+							android:textSize="12sp" />
+				        
+					</LinearLayout>
+					
+				</LinearLayout>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.1dp"
+					android:background="@color/border_grey" />
+				
+				<LinearLayout
+					android:id="@+id/rlSchool"
+					android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:background="@drawable/list_item"
+					android:gravity="center_vertical"
+					android:padding="10dip"
+					android:orientation="horizontal" >
+						
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/text_color_dark"
+						android:text="@string/school" />
+	
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+						
+						<TextView
+						    android:id="@+id/tvSchool"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="@color/text_color_grey"
+							android:textSize="12sp" />
+				        
+					</LinearLayout>
+					
+				</LinearLayout>
+				
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.1dp"
+					android:background="@color/border_grey" />
+				
+				<LinearLayout
+					android:id="@+id/rlDescription"
+					android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	               	android:background="@drawable/list_item"
+					android:gravity="center_vertical"
+					android:padding="10dip"
+					android:orientation="horizontal" >
+						
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/text_color_dark"
+						android:text="@string/self_description" />
+	
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+	
+						<ImageView
+							android:layout_width="20dip"
+							android:layout_height="20dip"
+							android:src="@drawable/arrow_right" />
+				        
+					</LinearLayout>
+					
+				</LinearLayout>
+			    
+			</LinearLayout>
+		
+		</LinearLayout>
+		
+	</ScrollView>
+		
+   <RelativeLayout
+       	android:id="@+id/head_layout"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_alignParentTop="true"
+		style="@style/ActionBar" >
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_return" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnReturn"
+            android:layout_centerVertical="true"
+            android:text="@string/user_settings"
+            style="@style/ActionBarTitle" />
+        
+    </RelativeLayout>
+		
+</RelativeLayout>

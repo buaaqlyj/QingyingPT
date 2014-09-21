@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mlist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color_deep"
+	style="@style/svVerticalBars">
+
+    <LinearLayout
+    	android:id="@+id/mlist_inner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/rlCurrentUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:background="@drawable/slidemenu_btn" >
+
+	        <RelativeLayout
+	            android:layout_width="56dp"
+	            android:layout_height="56dp" >
+	
+	            <ImageView
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:src="@drawable/avatar_bg" />
+	
+	            <ImageView
+	                android:id="@+id/ivAvatar"
+	                android:layout_width="52dp"
+	                android:layout_height="52dp"
+	                android:layout_centerHorizontal="true"
+	                android:layout_centerVertical="true"
+	                android:src="@drawable/default_avatar" />
+	            
+	        </RelativeLayout>
+			
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dip">
+	            
+	            <TextView
+	                android:id="@+id/tvName"
+	                style="@style/ActionBarTitle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="4dip"
+	                android:textSize="16sp" />
+	            
+	            <TextView
+	                android:id="@+id/tvClass"
+	                style="@style/ActionBarTitle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="4dip"
+	                android:textColor="@color/text_color_grey"
+	                android:textSize="14sp" />
+            
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="right" >
+				
+		        <ImageView
+		            android:layout_width="20dip"
+		            android:layout_height="20dip"
+		            android:src="@drawable/arrow_right" />
+		        
+			</LinearLayout>
+			
+        </LinearLayout>
+		        
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_black" />
+            
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_light_black" />
+        
+        <LinearLayout
+			android:id="@+id/btn_forum"
+			android:background="@drawable/slidemenu_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+	        <ImageView
+	            android:layout_width="45dp"
+	            android:layout_height="45dp"
+				android:paddingLeft="10dp"
+	            android:src="@drawable/button_forum" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="50dp"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="10dp"
+				android:textColor="@color/bg_color_white"
+	            android:text="@string/forums" />
+        
+        </LinearLayout>
+	        
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_black" />
+            
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_light_black" />
+        
+        <LinearLayout
+			android:id="@+id/btn_torrent"
+			android:background="@drawable/slidemenu_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+	
+	        <ImageView
+	            android:layout_width="45dp"
+	            android:layout_height="45dp"
+				android:paddingLeft="10dp"
+	            android:src="@drawable/button_torrent" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="50dp"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="10dp"
+				android:textColor="@color/bg_color_white"
+	            android:text="@string/torrent" />
+        
+        </LinearLayout>
+		        
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_black" />
+            
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_light_black" />
+        
+        <LinearLayout
+			android:id="@+id/btn_search"
+			android:background="@drawable/slidemenu_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+	        <ImageView
+	            android:layout_width="45dp"
+	            android:layout_height="45dp"
+				android:paddingLeft="10dp"
+	            android:src="@drawable/button_search" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="50dp"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="10dp"
+				android:textColor="@color/bg_color_white"
+	            android:text="@string/search" />
+        
+        </LinearLayout>
+		        
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_black" />
+            
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_light_black" />
+        
+        <LinearLayout
+			android:id="@+id/btn_apps"
+			android:background="@drawable/slidemenu_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+	        <ImageView
+	            android:layout_width="45dp"
+	            android:layout_height="45dp"
+				android:paddingLeft="10dp"
+	            android:src="@drawable/button_apps" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="50dp"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="10dp"
+				android:textColor="@color/bg_color_white"
+	            android:text="@string/apps" />
+        
+        </LinearLayout>
+		        
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_black" />
+            
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_light_black" />
+        
+        <LinearLayout
+			android:id="@+id/btn_mail"
+			android:background="@drawable/slidemenu_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+	        <ImageView
+	            android:layout_width="45dp"
+	            android:layout_height="45dp"
+				android:paddingLeft="10dp"
+	            android:src="@drawable/button_comment" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="50dp"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="10dp"
+				android:textColor="@color/bg_color_white"
+	            android:text="@string/mail" />
+        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:gravity="right" >
+
+			    <TextView
+			        android:id="@+id/tvMessageCount"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+	            	android:gravity="center"
+					style="@style/CounterRed"
+			        android:visibility="gone" />
+	        
+	        </LinearLayout>
+        
+        </LinearLayout>
+		        
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_black" />
+            
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_light_black" />
+        
+        <LinearLayout
+			android:id="@+id/btn_settings"
+			android:background="@drawable/slidemenu_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+	        <ImageView
+	            android:layout_width="45dp"
+	            android:layout_height="45dp"
+				android:paddingLeft="10dp"
+	            android:src="@drawable/button_settings" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="50dp"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="10dp"
+				android:textColor="@color/bg_color_white"
+	            android:text="@string/settings" />
+        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:gravity="right" >
+			        
+			    <TextView
+			        android:id="@+id/tvSettingsCount"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+	            	android:gravity="center"
+					style="@style/CounterRed"
+			        android:visibility="gone" />
+	        
+	        </LinearLayout>
+        
+        </LinearLayout>
+	        
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_black" />
+            
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:background="@color/border_light_black" />
+        
+    </LinearLayout>
+
+</ScrollView>

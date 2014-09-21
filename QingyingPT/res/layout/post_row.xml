@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:background="@color/bg_color_white" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingRight="15dp" >
+        
+		<ImageView
+			android:id="@+id/ivUserAvatar"
+			android:layout_width="@dimen/avatar"
+            android:layout_height="@dimen/avatar"
+			android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ivUserAvatar"
+            android:layout_marginLeft="10dp"
+	        android:textColor="@color/text_color_blue"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/tvFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/tvUsername"
+            android:layout_marginLeft="10dp"
+	        android:textColor="@color/text_color_grey"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/tvAdded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvUsername"
+            android:layout_below="@+id/tvUsername"
+            android:layout_marginTop="3dp"
+	        android:textColor="@color/text_color_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvUsername"
+            android:layout_below="@+id/tvAdded"
+            android:layout_marginTop="3dp"
+			android:textSize="14sp"
+			android:autoLink="web"
+            android:textColor="@color/text_color_dark" />
+	    
+	   <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="50dp"
+	        android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvBody" >
+		    
+		    <LinearLayout
+		        android:id="@+id/rlReply"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:background="@drawable/button_grey"
+		        android:gravity="center_vertical"
+		        android:layout_marginRight="8dip"
+		        android:padding="5dip" >
+		    
+			    <ImageView
+			        android:id="@+id/ivReply"
+			        android:layout_width="16dp"
+			        android:layout_height="16dp"
+			        android:src="@drawable/button_comment_dark" />
+		
+			    <TextView
+			        android:id="@+id/tvReply"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="3dp"
+		            android:textColor="@color/button_post_text"
+					android:textSize="13sp"
+			        android:text="@string/reply" />
+		    
+	    	</LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/rlLike"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:background="@drawable/button_grey"
+		        android:gravity="center_vertical"
+		        android:padding="5dip">
+		    
+			    <ImageView
+			        android:id="@+id/ivLike"
+			        android:layout_width="16dp"
+			        android:layout_height="16dp"
+			        android:src="@drawable/button_like" />
+		
+			    <TextView
+			        android:id="@+id/tvLike"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="3dp"
+		            android:textColor="@color/button_post_text"
+					android:textSize="13sp"
+			        android:text="@string/like" />
+		    
+	    	</LinearLayout>
+	    	
+	    </LinearLayout>
+	    
+    </RelativeLayout>
+    
+	<View
+		android:id="@+id/line"
+		android:layout_width="match_parent"
+		android:layout_height="0.1dp"
+		android:layout_alignParentBottom="true"
+		android:background="@color/border_grey" />
+</RelativeLayout>

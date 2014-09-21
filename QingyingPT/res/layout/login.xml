@@ -1,0 +1,159 @@
+<cn.edu.hit.pt.widget.SizeRecordLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_light_grey"
+    tools:context=".Login" >
+    
+	<RelativeLayout
+		android:id="@+id/rlAvatar"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+        
+        <RelativeLayout
+            android:layout_width="86dp"
+            android:layout_height="86dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatar_bg" />
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/default_avatar" />
+            
+        </RelativeLayout>
+
+	    <ImageView
+	        android:id="@+id/ivClose"
+	        android:layout_width="24dip"
+	        android:layout_height="24dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/button_close"
+	        android:visibility="gone" />
+	    
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlAvatar"
+        android:layout_marginTop="60dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:orientation="vertical" >
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:background="@drawable/bg_border" >
+
+	        <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+		
+		        <ImageView
+		            android:layout_width="32dp"
+		            android:layout_height="32dp"
+		            android:layout_margin="4dp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:src="@drawable/username" />
+		        
+		        <EditText
+		            android:id="@+id/etUsername"
+		            android:layout_width="match_parent"
+		            android:layout_height="45dp"
+		            android:hint="@string/input_username"
+		            android:background="@drawable/bg_edittext_login"
+		            android:layout_marginLeft="36dip"
+		            android:layout_marginRight="36dip"
+		            android:textSize="15sp"
+				    android:inputType="text"
+				    android:ems="10" />
+
+		        <ImageView
+		            android:id="@+id/btnClearName"
+		            android:layout_width="32dp"
+		            android:layout_height="32dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="4dp"
+		            android:src="@drawable/ic_close"
+		            android:visibility="gone" />
+	
+			</RelativeLayout>
+			
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="0.1dip"
+	            android:background="@color/border_grey"/>
+
+	        <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+		
+		        <ImageView
+		            android:layout_width="32dp"
+		            android:layout_height="32dp"
+		            android:layout_margin="4dp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:src="@drawable/password" />
+		        
+		        <EditText
+		            android:id="@+id/etPassword"
+		            android:layout_width="match_parent"
+		            android:layout_height="45dp"
+		            android:hint="@string/input_password"
+		            android:background="@drawable/bg_edittext_login"
+		            android:layout_marginLeft="36dip"
+		            android:layout_marginRight="36dip"
+		            android:textSize="15sp"
+		            android:inputType="textPassword"
+				    android:ems="10" />
+
+		        <ImageView
+		            android:id="@+id/btnClearPassword"
+		            android:layout_width="32dp"
+		            android:layout_height="32dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_margin="4dp"
+		            android:src="@drawable/ic_close"
+		            android:visibility="gone" />
+	
+			</RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/button_blue"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/login"
+            android:textColor="@color/text_color_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</cn.edu.hit.pt.widget.SizeRecordLayout>

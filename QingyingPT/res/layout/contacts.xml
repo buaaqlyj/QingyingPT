@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:focusable="true"   
+	android:focusableInTouchMode="true">
+    
+    <cn.edu.hit.pt.widget.CustomScrollView
+        android:id="@+id/svFriendslist"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/rlSearch"
+    	android:background="@color/bg_color_iron"
+		android:layout_above="@+id/svSelection"
+   		style="@style/svVerticalBars" >
+
+		<LinearLayout
+			android:id="@+id/container"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			
+		</LinearLayout>
+		
+	</cn.edu.hit.pt.widget.CustomScrollView>
+	
+    <HorizontalScrollView
+		android:id="@+id/svSelection"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+	    android:background="@drawable/bg_border_top"
+   		style="@style/svHorizontalBars">
+
+		<LinearLayout
+			android:id="@+id/rlSelection"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:paddingRight="@dimen/padding_medium"
+			android:orientation="horizontal"
+			android:visibility="gone" >
+	        
+		</LinearLayout>
+        
+    </HorizontalScrollView>
+
+	<RelativeLayout
+		android:id="@+id/rlSearch"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+       	android:layout_marginTop="-3dip"
+       	android:paddingTop="3dp"
+       	android:background="@drawable/bg_border_bottom_grey"
+		android:layout_below="@+id/head_layout" >
+		
+		<EditText
+			android:id="@+id/etUsername"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_alignParentLeft="true"
+			android:textSize="14sp"
+			android:singleLine="true"
+			android:background="@drawable/edittext_no_border"
+			android:hint="@string/search_users" 
+			android:padding="10dp" />
+
+		<Button
+		    android:id="@+id/btnSearch"
+		    android:layout_width="32dp"
+		    android:layout_height="32dp"
+		    android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+		    android:background="@drawable/button_search_dark" />
+        
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/head_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		style="@style/ActionBar" >
+
+		<Button
+			android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/button_return" />
+
+		<TextView
+			android:id="@+id/tvTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/btnReturn"
+			android:layout_centerVertical="true"
+			android:text="@string/contacts"
+			style="@style/ActionBarTitle" />
+        
+	</RelativeLayout>
+	
+</RelativeLayout>

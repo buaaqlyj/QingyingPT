@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ScrollView
+		android:id="@+id/svRefresh"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/head_layout"
+    	android:background="@color/bg_color_iron"
+       	android:layout_marginTop="-3dip"
+   		style="@style/svVerticalBars" >
+        
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:orientation="vertical" >
+    		
+			<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+            	android:layout_marginTop="10dip"
+            	android:layout_marginLeft="10dip"
+            	android:layout_marginRight="10dip"
+            	android:layout_marginBottom="0dip"
+	    		android:background="@drawable/bg_border" >
+            
+	            <LinearLayout
+					android:id="@+id/rlUserSettings"
+	                android:padding="10dp"
+					android:orientation="horizontal"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:gravity="center_vertical"
+	                android:background="@drawable/list_item" >
+	
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	                    android:text="@string/user_settings"
+			            android:textColor="@color/text_color_dark" />
+
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+						
+				        <ImageView
+				            android:layout_width="20dip"
+				            android:layout_height="20dip"
+				            android:src="@drawable/arrow_right" />
+				        
+					</LinearLayout>
+					
+	            </LinearLayout>
+
+			</LinearLayout>
+    		
+			<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+            	android:layout_marginTop="10dip"
+            	android:layout_marginLeft="10dip"
+            	android:layout_marginRight="10dip"
+            	android:layout_marginBottom="0dip"
+	    		android:background="@drawable/bg_border" >
+	            
+	            <LinearLayout
+					android:id="@+id/rlReceiveOfflineMessage"
+					android:orientation="horizontal"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:gravity="center_vertical"
+	                android:background="@drawable/list_item" >
+	
+				    <TextView
+	                	android:padding="10dp"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	                    android:text="@string/receive_offline_message"
+			            android:textColor="@color/text_color_dark" />
+				    
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical|right" >
+
+						<ToggleButton
+						    android:id="@+id/tbReceiveOfflineMessage"
+						    android:layout_width="52dip"
+						    android:layout_height="35dip"
+						    android:layout_marginTop="4dp"
+						    android:layout_marginRight="6dp"
+						    android:textOn=""
+							android:textOff=""
+							android:background="@drawable/toggle" />
+				        
+					</LinearLayout>
+					
+	            </LinearLayout>
+	            
+			</LinearLayout>
+    		
+			<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+            	android:layout_marginTop="10dip"
+            	android:layout_marginLeft="10dip"
+            	android:layout_marginRight="10dip"
+            	android:layout_marginBottom="0dip"
+	    		android:background="@drawable/bg_border" >
+	            
+	            <LinearLayout
+					android:id="@+id/rlNoPic"
+					android:orientation="horizontal"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:gravity="center_vertical"
+	                android:background="@drawable/list_item" >
+	
+				    <TextView
+	                	android:padding="10dp"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	                    android:text="@string/no_pic"
+			            android:textColor="@color/text_color_dark" />
+				    
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical|right" >
+
+						<ToggleButton
+						    android:id="@+id/tbNoPic"
+						    android:layout_width="52dip"
+						    android:layout_height="35dip"
+						    android:layout_marginTop="4dp"
+						    android:layout_marginRight="6dp"
+						    android:textOn=""
+							android:textOff=""
+							android:background="@drawable/toggle" />
+				        
+					</LinearLayout>
+					
+	            </LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.1dp"
+					android:background="@color/border_grey" />
+            
+	            <LinearLayout
+					android:id="@+id/rlCache"
+	                android:padding="10dp"
+					android:orientation="horizontal"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:gravity="center_vertical"
+	                android:background="@drawable/list_item" >
+	
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	                    android:text="@string/clear_cache"
+			            android:textColor="@color/text_color_dark" />
+				    
+				    <TextView
+				        android:id="@+id/tvCache"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+			            android:textColor="@color/text_color_dark" />
+				    
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+						
+				        <ImageView
+				            android:layout_width="20dip"
+				            android:layout_height="20dip"
+				            android:src="@drawable/arrow_right" />
+				        
+					</LinearLayout>
+					
+	            </LinearLayout>
+
+			</LinearLayout>
+    		
+			<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+            	android:layout_marginTop="10dip"
+            	android:layout_marginLeft="10dip"
+            	android:layout_marginRight="10dip"
+            	android:layout_marginBottom="0dip"
+	    		android:background="@drawable/bg_border" >
+            
+	            <LinearLayout
+	                android:id="@+id/rlAbout"
+	                android:padding="10dp"
+					android:orientation="horizontal"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:gravity="center_vertical"
+	                android:background="@drawable/list_item" >
+	
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	                    android:text="@string/about"
+			            android:textColor="@color/text_color_dark" />
+				    
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+						
+				        <ImageView
+				            android:layout_width="20dip"
+				            android:layout_height="20dip"
+				            android:src="@drawable/arrow_right" />
+				        
+					</LinearLayout>
+					
+	            </LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.1dp"
+					android:background="@color/border_grey" />
+				
+				<LinearLayout
+				    android:id="@+id/rlCheckUpdate"
+	                android:padding="10dp"
+					android:orientation="horizontal"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:gravity="center_vertical"
+	                android:background="@drawable/list_item" >
+	
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	                    android:text="@string/check_update"
+			            android:textColor="@color/text_color_dark" />
+
+				    <TextView
+				        android:id="@+id/tvUpdateCount"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="10dp"
+				        android:visibility="gone"
+				        android:text="1"
+				        style="@style/CounterRed_Tiny" />
+				    
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+						
+				        <ImageView
+				            android:layout_width="20dip"
+				            android:layout_height="20dip"
+				            android:src="@drawable/arrow_right" />
+				        
+					</LinearLayout>
+					
+	            </LinearLayout>
+				
+			</LinearLayout>
+			
+			<Button
+			    android:id="@+id/logout"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+            	android:layout_marginTop="10dip"
+            	android:layout_marginLeft="10dip"
+            	android:layout_marginRight="10dip"
+            	android:layout_marginBottom="0dip"
+	            android:background="@drawable/button_logout"
+	            android:paddingBottom="10dp"
+	            android:paddingTop="10dp"
+	            android:text="@string/logout"
+	            android:textColor="@color/text_color_white"/>
+			
+		</LinearLayout>
+		
+	</ScrollView>
+
+   <RelativeLayout
+       	android:id="@+id/head_layout"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+		style="@style/ActionBar" >
+
+        <Button
+            android:id="@+id/showLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_menu"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/settings"
+            style="@style/ActionBarTitle" />
+        
+    </RelativeLayout>
+	
+</RelativeLayout>

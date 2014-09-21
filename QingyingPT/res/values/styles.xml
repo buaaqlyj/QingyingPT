@@ -1,0 +1,133 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="ActionBar">
+        <item name="android:background">@drawable/bg_actionbar</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="ActionBarTitle">
+        <item name="android:textColor">@color/text_color_white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="ActionBarButton">
+        <item name="android:height">45dp</item>
+        <item name="android:width">45dp</item>
+        <item name="android:minWidth">45dp</item>
+        <item name="android:maxWidth">45dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:maxHeight">45dp</item>
+    </style>
+    <style name="TabBottomLine">
+        <item name="android:background">@color/bg_color_blue</item>
+    </style>
+    <style name="CounterRed">
+        <item name="android:background">@drawable/badge_red</item>
+        <item name="android:textColor">@color/text_color_white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+		<item name="android:minWidth">30dip</item>
+    </style>
+    <style name="CounterRed_Small">
+        <item name="android:background">@drawable/badge_red</item>
+        <item name="android:textColor">@color/text_color_white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    <style name="CounterRed_Tiny">
+        <item name="android:background">@drawable/badge_red</item>
+        <item name="android:textColor">@color/text_color_white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingLeft">4.5dp</item>
+        <item name="android:paddingRight">4.5dp</item>
+    </style>
+    <style name="svVerticalBars">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarSize">4dip</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+    <style name="svHorizontalBars">
+        <item name="android:scrollbars">horizontal</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/scrollbar_horizontal_thumb</item>
+        <item name="android:scrollbarSize">4dip</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+    <style name="mEditText">
+		<item name="android:minHeight">36dp</item>
+		<item name="android:maxHeight">108dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarSize">4dip</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="RatingBar">
+		<item name="android:progressDrawable">@drawable/ratingbar</item>
+		<item name="android:minHeight">16dip</item>
+		<item name="android:maxHeight">16dip</item>
+	</style>
+	<style name="ProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">2dip</item>
+        <item name="android:maxHeight">2dip</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal</item>
+    </style>
+	<style name="MainProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">12dip</item>
+        <item name="android:progressDrawable">@drawable/main_progressbar_horizontal</item>
+    </style>
+	<style name="NotificationProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">12dip</item>
+        <item name="android:progressDrawable">@drawable/main_progressbar_horizontal</item>
+    </style>
+	<style name="ImageProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">14dip</item>
+        <item name="android:maxHeight">14dip</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progressbar_image</item>
+    </style>
+	<style name="FadeAnimation" parent="android:Animation" mce_bogus="1">          
+		<item name="android:windowEnterAnimation">@anim/fade_enter</item>     
+		<item name="android:windowExitAnimation">@anim/fade_exit</item>     
+	</style>
+	<style name="FadeTransAnimation" parent="android:Animation" mce_bogus="1">          
+		<item name="android:windowEnterAnimation">@anim/fade_trans_enter</item>     
+		<item name="android:windowExitAnimation">@anim/fade_trans_exit</item>     
+	</style>
+	<style name="PopupAnimation" parent="android:Animation" mce_bogus="1">          
+		<item name="android:windowEnterAnimation">@anim/popup_enter</item>     
+		<item name="android:windowExitAnimation">@anim/popup_exit</item>     
+	</style>
+	<style name="Dialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowBackground">@null</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsFloating">true</item>
+	</style>
+	<style name="CustomListView">
+	    <item name="android:divider">@color/border_grey</item>
+		<item name="android:dividerHeight">0.1dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarSize">4dip</item>
+        <item name="android:fadingEdge">none</item>
+	</style>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+		
+	    <LinearLayout
+	        android:id="@+id/rlOnlyAuthor"
+	        android:layout_width="150dp"
+	        android:layout_height="40dp"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:background="@drawable/list_item">
+	        
+	        <ImageView
+	            android:id="@+id/ivOnlyAuthor"
+	            android:layout_width="24dip"
+	            android:layout_height="24dip"
+	            android:layout_marginRight="5dp"
+	            android:src="@drawable/button_only_author" />
+	        
+	        <TextView
+	            android:id="@+id/tvOnlyAuthor"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/only_author"
+	            android:textSize="12sp"
+	            android:textColor="@color/text_color_deep_grey"/>
+	        
+	    </LinearLayout>
+	
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="0.1dp"
+		    android:background="@color/border_grey"/>
+		
+	    <LinearLayout
+	        android:id="@+id/rlReverseOrder"
+	        android:layout_width="150dp"
+	        android:layout_height="40dp"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:background="@drawable/list_item">
+	        
+	        <ImageView
+	            android:id="@+id/ivReverseOrder"
+	            android:layout_width="24dip"
+	            android:layout_height="24dip"
+	            android:layout_marginRight="5dp"
+	            android:src="@drawable/button_order" />
+	        
+	        <TextView
+	            android:id="@+id/tvReverseOrder"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/reverse_order"
+	            android:textSize="12sp"
+	            android:textColor="@color/text_color_deep_grey"/>
+	        
+	    </LinearLayout>
+	
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="0.1dp"
+		    android:background="@color/border_grey"/>
+		
+	    <LinearLayout
+	        android:id="@+id/rlQRCode"
+	        android:layout_width="150dp"
+	        android:layout_height="40dp"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:background="@drawable/list_item">
+	        
+	        <ImageView
+	            android:layout_width="24dip"
+	            android:layout_height="24dip"
+	            android:layout_marginRight="5dp"
+	            android:src="@drawable/button_qrcode" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/make_qrcode"
+	            android:textSize="12sp"
+	            android:textColor="@color/text_color_deep_grey"/>
+	        
+	    </LinearLayout>
+	
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="0.1dp"
+		    android:background="@color/border_grey"/>
+		
+	    <LinearLayout
+	        android:id="@+id/rlShare"
+	        android:layout_width="150dp"
+	        android:layout_height="40dp"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:background="@drawable/list_item">
+	        
+	        <ImageView
+	            android:layout_width="24dip"
+	            android:layout_height="24dip"
+	            android:layout_marginRight="5dp"
+	            android:src="@drawable/button_share_toolbar" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/share_to"
+	            android:textSize="12sp"
+	            android:textColor="@color/text_color_deep_grey"/>
+	        
+	    </LinearLayout>
+	
+</LinearLayout>

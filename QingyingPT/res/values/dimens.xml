@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="avatar">40dp</dimen>
+    <dimen name="avatar_with_padding">60dp</dimen>
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="edittext_height_small">36dp</dimen>
+    <dimen name="edittext_height_large">100dp</dimen>
+    <dimen name="at_tag_height">22dp</dimen>
+    <dimen name="at_tag_radius">3dp</dimen>
+    <dimen name="at_tag_padding">3dp</dimen>
+    <dimen name="at_tag_text_size">12dp</dimen>
+</resources>

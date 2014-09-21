@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shoutbox_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	android:padding="10dp"
+	    android:orientation="vertical" >
+        
+		<ImageView
+			android:id="@+id/ivUserAvatar"
+			android:layout_width="@dimen/avatar"
+            android:layout_height="@dimen/avatar"
+			android:src="@drawable/default_avatar"
+			android:layout_alignParentRight="true" />
+
+	    <TextView
+	        android:id="@+id/tvText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/ivUserAvatar"
+			android:layout_alignTop="@id/ivUserAvatar"
+		   	android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+			android:autoLink="web"
+	        android:textColor="@color/text_color_white"
+	        android:textColorLink="@color/text_color_white"
+			android:background="@drawable/babble_blue"
+	        android:textSize="13sp" />
+
+	    <ProgressBar
+	        android:id="@+id/pbPosting"
+	        style="?android:attr/progressBarStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:indeterminateDrawable="@drawable/progressbar_rotate"
+	        android:layout_toLeftOf="@+id/tvText"
+	        android:visibility="gone" />
+
+	    <ImageView
+	        android:id="@+id/btnError"
+	        style="?android:attr/progressBarStyleSmall"
+	        android:layout_width="24dp"
+	        android:layout_height="24dp"
+	        android:visibility="gone"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/tvText"
+			android:src="@drawable/ic_small_error"/>
+	
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_white">
+    
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	android:padding="10dp"
+    	android:paddingRight="15dp"
+	    android:orientation="vertical"
+    	android:background="@drawable/list_item" >
+
+		<ImageView
+			android:id="@+id/ivUserAvatar"
+			android:layout_width="@dimen/avatar"
+            android:layout_height="@dimen/avatar"
+			android:src="@drawable/default_avatar" />
+	
+	    <TextView
+	        android:id="@+id/tvUserName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginBottom="3dp"
+	        android:layout_toRightOf="@id/ivUserAvatar"
+	        android:textSize="16sp"
+	        android:textColor="@color/text_color_blue"/>
+	
+	    <TextView
+	        android:id="@+id/tvCount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/tvUserName"
+	        android:layout_toRightOf="@id/tvUserName"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginBottom="1dp"
+	        android:layout_marginTop="4.5dp"
+            android:visibility="gone"
+            style="@style/CounterRed_Tiny" />
+
+	    <TextView
+	        android:id="@+id/tvText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/tvUserName"
+	        android:layout_below="@+id/tvUserName"
+	        android:layout_marginBottom="3dp"
+	        android:textColor="@color/text_color_deep_grey"
+	        android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+	    <TextView
+	        android:id="@+id/tvTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignBottom="@+id/tvUserName"
+	        android:layout_marginBottom="3dp"
+	        android:textColor="@color/text_color_light"
+	        android:textSize="12sp" />
+	
+	</RelativeLayout>
+	
+	<View
+		android:id="@+id/line"
+		android:layout_width="match_parent"
+		android:layout_height="0.1dp"
+		android:layout_alignParentBottom="true"
+		android:background="@color/border_grey" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+	<cn.edu.hit.pt.widget.PullToRefreshView
+	    android:id="@+id/pull_refresh_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:layout_below="@id/head_layout"
+		android:layout_marginTop="-2dp"
+	    android:orientation="vertical"
+    	android:background="@color/bg_color_deep" >
+    	
+	    <cn.edu.hit.pt.widget.CustomScrollView
+			android:id="@+id/svRefresh"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+    		android:background="@color/bg_color_iron"
+    		style="@style/svVerticalBars" >
+				    
+			<LinearLayout
+				android:id="@+id/container"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center">
+				
+			</LinearLayout>
+			
+		</cn.edu.hit.pt.widget.CustomScrollView>
+		
+	</cn.edu.hit.pt.widget.PullToRefreshView>
+
+	<RelativeLayout
+       	android:id="@+id/head_layout"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+		style="@style/ActionBar" >
+
+		<Button
+            android:id="@+id/showLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_menu"/>
+
+        <Button
+            android:id="@+id/btnContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_write"/>
+
+		<TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/mail"
+            style="@style/ActionBarTitle" />
+        
+	</RelativeLayout>
+	
+</RelativeLayout>

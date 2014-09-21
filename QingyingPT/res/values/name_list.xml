@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PullToRefreshView">PullToRefreshView</string>
+    <string name="SlidingMenu">SlidingMenu</string>
+    <string name="customDialog">Custom Dialog</string>
+    <string name="antoinevianey">BY antoine vianey</string>
+    <string name="SwipeBackLayout">SwipeBackLayout</string>
+    <string name="Issacw0ng">BY Issacw0ng</string>
+    <string name="LiteHttpAndOrm">LiteHttp, LiteOrm</string>
+    <string name="matianyu">BY 马天宇</string>
+    
+</resources>

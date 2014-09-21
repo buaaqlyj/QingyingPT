@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center" >
+    
+	<cn.edu.hit.pt.widget.GrapeGridview
+		android:id="@+id/gridView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="10dp"
+		android:numColumns="6"
+		android:gravity="center"
+		android:verticalSpacing="5dp"
+		android:horizontalSpacing="10dp"
+		android:stretchMode="columnWidth"
+		android:listSelector="@color/bg_color_white_grey"
+		style="@style/svVerticalBars" />
+    
+</LinearLayout>

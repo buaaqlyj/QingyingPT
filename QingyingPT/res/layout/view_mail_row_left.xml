@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mail_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:padding="10dp"
+    android:orientation="vertical" >
+    
+	<ImageView
+		android:id="@+id/ivUserAvatar"
+		android:layout_width="@dimen/avatar"
+		android:layout_height="@dimen/avatar"
+		android:src="@drawable/default_avatar" />
+		    
+		<RelativeLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:background="@drawable/babble_white"
+	        android:layout_alignTop="@+id/ivUserAvatar"
+			android:layout_toRightOf="@+id/ivUserAvatar"
+	    	android:layout_marginLeft="10dp"
+	    	android:layout_marginRight="10dp"
+		    android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/tvSubject"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:textColor="@color/bg_color_dark_black"
+	            android:textSize="13sp" />
+	        
+	        <TextView
+	            android:id="@+id/tvText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	       	 	android:layout_below="@+id/tvSubject"
+	            android:textColor="@color/text_color_deep_grey"
+				android:autoLink="web"
+	            android:textSize="13sp" />
+	        
+		</RelativeLayout>
+	
+</RelativeLayout>

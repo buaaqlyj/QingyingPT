@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:gravity="center"
+		android:orientation="vertical"
+        android:background="@color/bg_color_iron_dark" >
+       
+		<Button
+		    android:id="@+id/btnCheckin"
+		    android:layout_width="240dp"
+		    android:layout_height="48dp"
+		    android:text="@string/checkin_right_now"
+		    android:textSize="16sp"
+		    android:textColor="@color/bg_color_white"
+	        android:background="@drawable/button_green" />
+
+        <LinearLayout
+	        android:id="@+id/rlInfor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+	        android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/button_complete_big"
+                android:layout_marginRight="10dip" />
+
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/today_already_checkin"
+	                android:textColor="@color/text_color_white"
+	                android:textSize="16sp" />
+	
+	            <TextView
+	                android:id="@+id/tvInfor"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/text_color_grey"
+	                android:textSize="13sp" />
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+		
+    </LinearLayout>
+    
+	<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlHeader"
+    	style="@style/svVerticalBars"
+    	android:background="@color/bg_color_iron" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:orientation="vertical"
+	        android:padding="10dp">
+        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+		        android:background="@drawable/bg_border">
+        
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+	        		android:padding="10dp"
+		            android:textColor="@color/text_color_dark"
+		            android:text="@string/checkin_list"/>
+        
+		        <LinearLayout
+		            android:id="@+id/mcontainer"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:gravity="center_vertical|center_horizontal">
+					
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+    </ScrollView>
+
+</RelativeLayout>

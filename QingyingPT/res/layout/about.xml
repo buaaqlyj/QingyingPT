@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/head_layout"
+    	android:background="@color/bg_color_iron"
+       	android:layout_marginTop="-3dip"
+   		style="@style/svVerticalBars" >
+        
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:orientation="vertical" >
+        
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:padding="40dp" >
+	
+				<ImageView
+				    android:id="@+id/ivLogo"
+				    android:layout_width="96dp"
+				    android:layout_height="96dp"
+				    android:src="@drawable/app_icon" />
+				
+				<TextView
+				    android:layout_marginTop="10dp"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="@string/app_full_name"
+				    android:textColor="@color/text_color_dark"
+				    android:textSize="16sp"/>
+				
+				<TextView
+				    android:id="@+id/tvVersion"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textColor="@color/text_color_grey"
+				    android:textSize="12sp"/>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+            	android:layout_margin="10dip"
+	    		android:background="@drawable/bg_border" >
+				
+				<LinearLayout
+				    android:id="@+id/rlSpecialThanks"
+	                android:padding="10dp"
+					android:orientation="horizontal"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:gravity="center_vertical"
+	                android:background="@drawable/list_item" >
+	
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	                    android:text="@string/special_thanks"
+			            android:textColor="@color/text_color_dark" />
+				    
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+						
+				        <ImageView
+				            android:layout_width="20dip"
+				            android:layout_height="20dip"
+				            android:src="@drawable/arrow_right" />
+				        
+					</LinearLayout>
+					
+	            </LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.1dp"
+					android:background="@color/border_grey" />
+				
+				<LinearLayout
+				    android:id="@+id/rlReport"
+	                android:padding="10dp"
+					android:orientation="horizontal"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:gravity="center_vertical"
+	                android:background="@drawable/list_item" >
+	
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	                    android:text="@string/make_report"
+			            android:textColor="@color/text_color_dark" />
+				    
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+						
+				        <ImageView
+				            android:layout_width="20dip"
+				            android:layout_height="20dip"
+				            android:src="@drawable/arrow_right" />
+				        
+					</LinearLayout>
+					
+	            </LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.1dp"
+					android:background="@color/border_grey" />
+				
+				<LinearLayout
+				    android:id="@+id/rlDonate"
+	                android:padding="10dp"
+					android:orientation="horizontal"
+	                android:layout_width="match_parent"
+	                android:layout_height="44dip"
+	                android:gravity="center_vertical"
+	                android:background="@drawable/list_item" >
+	
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+	                    android:text="@string/make_donations"
+			            android:textColor="@color/text_color_dark" />
+				    
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="right" >
+						
+				        <ImageView
+				            android:layout_width="20dip"
+				            android:layout_height="20dip"
+				            android:src="@drawable/arrow_right" />
+				        
+					</LinearLayout>
+					
+	            </LinearLayout>
+	            
+			</LinearLayout>
+	            
+		</LinearLayout>
+		
+	</ScrollView>
+
+	<RelativeLayout
+		android:id="@+id/head_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		style="@style/ActionBar" >
+
+		<Button
+			android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/button_return" />
+
+		<TextView
+			android:id="@+id/tvTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/btnReturn"
+			android:layout_centerVertical="true"
+			android:text="@string/about"
+			style="@style/ActionBarTitle" />
+        
+	</RelativeLayout>
+
+</RelativeLayout>

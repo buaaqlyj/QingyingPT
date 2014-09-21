@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/head_layout"
+    	android:background="@color/bg_color_iron"
+       	android:layout_marginTop="-3dip"
+   		style="@style/svVerticalBars" >
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:padding="20dp"
+		    android:orientation="vertical" >
+		
+		    <ImageView
+		        android:id="@+id/ivQRCode"
+		        android:layout_width="280dp"
+		        android:layout_height="280dp"
+		        android:scaleType="fitXY"
+            	android:layout_margin="20dip" />
+
+		    <Button
+			    android:id="@+id/btnSave"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+            	android:layout_margin="20dip"
+	            android:background="@drawable/button_green"
+	            android:paddingBottom="10dp"
+	            android:paddingTop="10dp"
+	            android:text="@string/save_qrcode"
+	            android:textColor="@color/text_color_white"/>
+		
+		</LinearLayout>
+   		
+   	</ScrollView>
+    
+	<RelativeLayout
+		android:id="@+id/head_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		style="@style/ActionBar" >
+
+		<Button
+			android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/button_return" />
+
+		<TextView
+			android:id="@+id/tvTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/btnReturn"
+			android:layout_centerVertical="true"
+			android:text="@string/make_qrcode"
+			style="@style/ActionBarTitle" />
+        
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="7dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/ivTime"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:src="@drawable/icon_history_dark" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:textSize="12sp"
+    	android:textColor="@color/text_color_deep_grey" />
+    
+</LinearLayout>

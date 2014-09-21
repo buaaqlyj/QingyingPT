@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="280dip"
+    android:background="@color/bg_color_white">
+ 
+    <LinearLayout 
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+ 
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_dark"
+            android:textSize="18sp"/>
+ 
+    </LinearLayout>
+ 
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.1dp"
+		android:background="@color/border_light" />
+	
+    <LinearLayout 
+        android:id="@+id/content"
+        android:orientation="vertical"
+		android:padding="10dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+ 
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_dark"
+			android:minHeight="80dip"
+            android:textSize="14sp"/>
+ 
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+    		style="@style/CustomListView"
+			android:minHeight="80dip"
+            android:visibility="gone"/>
+ 
+    </LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.1dp"
+		android:background="@color/border_light" />
+	
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+ 
+        <Button 
+            android:id="@+id/positiveButton"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="45dip"
+            android:background="@drawable/button_dialog"/>
+
+		<View
+			android:layout_height="match_parent"
+			android:layout_width="0.1dp"
+			android:background="@color/border_light" />
+ 
+        <Button 
+            android:id="@+id/negativeButton"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="45dip"
+            android:background="@drawable/button_dialog"/>
+ 
+    </LinearLayout>
+ 
+</LinearLayout>

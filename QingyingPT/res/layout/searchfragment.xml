@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:focusable="true"
+	android:focusableInTouchMode="true" >
+
+	<LinearLayout
+		android:id="@+id/mcontainer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/head_layout"
+ 		android:background="@color/bg_color_iron"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:id="@+id/rlHotSearch"
+			android:visibility="gone"
+			android:padding="15dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+		    
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/text_color_dark"
+			    android:textSize="13sp"
+			    android:layout_marginBottom="10dp"
+			    android:text="@string/hot_search" />
+			
+			<cn.edu.hit.pt.widget.FlowLayout
+				android:id="@+id/rlKeywords"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+
+			</cn.edu.hit.pt.widget.FlowLayout>
+		
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/rlTabHeader"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:background="@drawable/bg_border_bottom"
+			android:orientation="horizontal" >
+			
+		    <LinearLayout
+		        android:layout_width="0dp"
+				android:layout_weight="1"
+		        android:layout_height="match_parent"
+				android:background="@color/bg_color_light_grey"
+		        android:orientation="horizontal">
+		    
+				<TextView
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:padding="10dp"
+				    android:textSize="13sp"
+				    android:gravity="center"
+				    android:textColor="@color/text_color_dark"
+				    android:text="@string/topic" />
+				
+		    </LinearLayout>
+			
+		    <LinearLayout
+		        android:layout_width="0dp"
+				android:layout_weight="1"
+		        android:layout_height="match_parent"
+				android:background="@drawable/list_item"
+		        android:orientation="horizontal">
+		    
+				<View android:layout_height="match_parent" android:layout_width="0.1dp" android:background="@color/border_grey"/>
+		        
+		    	<TextView
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:padding="10dp"
+				    android:textSize="13sp"
+				    android:gravity="center"
+				    android:textColor="@color/text_color_dark"
+				    android:text="@string/torrent" />
+				
+				</LinearLayout>
+			
+		    <LinearLayout
+		        android:layout_width="0dp"
+				android:layout_weight="1"
+		        android:layout_height="match_parent"
+				android:background="@drawable/list_item"
+		        android:orientation="horizontal">
+		    
+				<View android:layout_height="match_parent" android:layout_width="0.1dp" android:background="@color/border_grey"/>
+		        
+		        <TextView
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:padding="10dp"
+				    android:textSize="13sp"
+				    android:gravity="center"
+				    android:textColor="@color/text_color_dark"
+				    android:text="@string/user" />				
+				
+		    </LinearLayout>
+		
+		</LinearLayout>
+	
+		<android.support.v4.view.ViewPager
+	        android:id="@+id/viewPager"
+	        android:visibility="gone"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@color/bg_color_white_grey" />
+	
+	</LinearLayout>
+
+   <RelativeLayout
+       	android:id="@+id/head_layout"
+       	android:layout_width="match_parent"
+       	android:layout_height="50dp"
+	    android:background="@color/bg_color_light_grey" >
+
+        <Button
+            android:id="@+id/showLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+            android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+            android:background="@drawable/button_menu_dark"/>
+
+		<Button
+		    android:id="@+id/btnSearch"
+		    android:layout_width="60dp"
+		    android:layout_height="36dp"
+		    android:layout_marginRight="8dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/button_blue"
+		    android:text="@string/search"
+		    android:textColor="@color/bg_color_white" />
+
+		<EditText
+		    android:id="@+id/etKey"
+		    android:layout_width="match_parent"
+		    android:layout_height="36dp"
+		    android:layout_marginRight="8dp"
+		    android:layout_centerVertical="true"
+		    android:layout_toRightOf="@+id/showLeft"
+		    android:layout_toLeftOf="@+id/btnSearch"
+		    android:background="@drawable/edittext"
+		    android:hint="@string/input_keyword"
+		    android:inputType="text"
+		    android:textSize="14sp" >
+
+		    <requestFocus />
+		</EditText>
+    
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.1dp"
+			android:layout_alignParentBottom="true"
+			android:background="@color/border_grey" />
+        
+    </RelativeLayout>
+      
+</RelativeLayout>

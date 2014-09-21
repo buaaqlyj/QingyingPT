@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center_horizontal"
+	android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="40dp" >
+
+	    <ImageView
+	        android:id="@+id/iv"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+		    android:layout_centerHorizontal="true"
+	        android:src="@drawable/default_item" />
+
+		<TextView
+		    android:id="@+id/tvPostTodayCount"
+		    style="@style/CounterRed_Small"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:textColor="@color/text_color_white"
+		    android:gravity="center"
+		    android:visibility="gone"
+		    android:textSize="10sp" />
+    
+    </RelativeLayout>
+
+	<TextView
+		android:id="@+id/tvForum"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/text_color_dark"
+		android:maxLines="1"
+		android:ellipsize="end"
+		android:gravity="center"
+		android:textSize="12sp" />
+
+</LinearLayout>

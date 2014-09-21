@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/list_item"
+        android:padding="10dp">
+        
+		<ImageView
+			android:id="@+id/ivUserAvatar"
+			android:layout_width="32dp"
+            android:layout_height="32dp"
+			android:src="@drawable/default_avatar" />
+		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:orientation="vertical" >
+	        
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:gravity="center_vertical" >
+		
+		        <TextView
+		            android:id="@+id/tvUsername"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+			        android:textColor="@color/text_color_blue"
+		            android:textSize="15sp" />
+		        
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="right|center_vertical"
+			        android:orientation="horizontal" >
+			        
+			        <TextView
+			            android:id="@+id/tvAdded"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+				        android:textColor="@color/text_color_grey"
+			            android:textSize="12sp" />
+
+			    </LinearLayout>
+		    
+		    </LinearLayout>
+	
+	        <TextView
+	            android:id="@+id/tvBody"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+				android:textSize="12sp"
+				android:autoLink="web"
+	            android:textColor="@color/text_color_deep_grey" />
+		    
+	    </LinearLayout>
+    
+    </LinearLayout>
+    
+	<View
+		android:id="@+id/line"
+		android:layout_width="match_parent"
+		android:layout_height="0.1dp"
+		android:background="@color/border_light" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <WebView
+        android:id="@+id/mWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head_layout"
+        android:layout_centerHorizontal="true"
+       	android:layout_marginTop="-3dip"
+       	style="@style/svVerticalBars" />
+
+   <RelativeLayout
+       	android:id="@+id/head_layout"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+		style="@style/ActionBar" >
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_return" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnReturn"
+            android:layout_centerVertical="true"
+            android:text="@string/document"
+            style="@style/ActionBarTitle" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

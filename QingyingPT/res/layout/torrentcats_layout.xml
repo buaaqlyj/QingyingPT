@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/popwindow_select"
+    android:padding="10dip"
+    android:orientation="vertical"
+    android:gravity="center" >
+    
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="25dp"
+	    android:orientation="vertical" >
+	
+	    <GridView
+	        android:id="@+id/mList"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:numColumns="4"
+			android:stretchMode="columnWidth"
+			style="@style/svVerticalBars" >
+	    </GridView>
+	    
+	</LinearLayout>
+
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:src="@drawable/loading" />
+    
+	<LinearLayout
+        android:id="@+id/rlList"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:orientation="vertical"
+        android:visibility="gone" >
+    
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+		    android:padding="5dp" >
+		    
+			<LinearLayout
+		        android:layout_width="110dp"
+			    android:layout_height="wrap_content"
+				android:orientation="vertical" >
+			    
+			    <View
+			        android:layout_height="0.1dp"
+			        android:layout_width="match_parent"
+			        android:background="@color/border_grey" />
+			    
+			</LinearLayout>
+	
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/text_color_dark"
+			    android:textSize="14sp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginRight="5dp"
+			    android:text="@string/torrent_categories" />
+		    
+			<LinearLayout
+		        android:layout_width="110dp"
+			    android:layout_height="wrap_content"
+				android:orientation="vertical" >
+			    
+			    <View
+			        android:layout_height="0.1dp"
+			        android:layout_width="match_parent"
+			        android:background="@color/border_grey" />
+			    
+			</LinearLayout>
+			
+		</LinearLayout>
+
+	    <GridView
+	        android:id="@+id/cList"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:numColumns="4"
+			android:stretchMode="columnWidth"
+			style="@style/svVerticalBars" >
+	    </GridView>
+	    
+	</LinearLayout>
+	
+</LinearLayout>

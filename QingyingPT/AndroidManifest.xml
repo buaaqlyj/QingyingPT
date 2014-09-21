@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.hit.pt"
+    android:installLocation="auto"
+    android:versionCode="105"
+    android:versionName="Beta 1.0.5" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.edu.hit.pt.LauncherActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+	        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+	            <category android:name="android.intent.category.LAUNCHER" />
+	        </intent-filter>
+        </activity>
+		<service
+			android:name="cn.edu.hit.pt.PollService"  
+			android:enabled="true" >
+		</service>
+        <activity
+            android:name="cn.edu.hit.pt.LoginActivity"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.Splash"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.MainActivity"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.AddPost"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.UserInformation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.ForumFragment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.Forum"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.TopicPosts"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.ViewMail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.ShoutboxActivity"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.TorrentFragment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.MyFriends"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.TorrentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.TorrentOtherCopy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.AllTasks"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.CheckinActivity"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.TorrentComments"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.SearchFragment"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.DocViewer"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.ProfileSettings"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.About"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.SpecialThanks"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.Report"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.Welcome"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.widget.ImageViewActivity"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.ContactActivity"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.QRCodeScanner"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.QRCodeMaker"
+            android:screenOrientation="portrait"
+			android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="cn.edu.hit.pt.widget.FlashPlayerActivity"
+			android:launchMode="singleTop"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+    </application>
+</manifest>

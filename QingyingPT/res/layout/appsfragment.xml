@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ScrollView
+		android:id="@+id/svRefresh"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/head_layout"
+    	android:background="@color/bg_color_iron"
+       	android:layout_marginTop="-3dip"
+   		style="@style/svVerticalBars" >
+        
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="10dp" >
+
+		    <ImageView
+		        android:id="@+id/loading"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:gravity="center"
+		        android:src="@drawable/loading"
+		        android:visibility="visible" />
+            
+            <LinearLayout
+                android:padding="5dp"
+				android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border" >
+		
+			    <GridView
+			        android:id="@+id/list"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+					android:numColumns="4"
+					android:stretchMode="columnWidth"
+					style="@style/svVerticalBars" >
+					
+			    </GridView>
+				
+            </LinearLayout>
+			
+		</LinearLayout>
+		
+	</ScrollView>
+
+   <RelativeLayout
+       	android:id="@+id/head_layout"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+		style="@style/ActionBar" >
+
+        <Button
+            android:id="@+id/showLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_menu"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/apps"
+            style="@style/ActionBarTitle" />
+        
+    </RelativeLayout>
+	
+</RelativeLayout>

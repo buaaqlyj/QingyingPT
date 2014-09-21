@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shoutbox_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	android:padding="10dp"
+	    android:orientation="vertical" >
+        
+		<ImageView
+			android:id="@+id/ivUserAvatar"
+			android:layout_width="@dimen/avatar"
+            android:layout_height="@dimen/avatar"
+			android:src="@drawable/default_avatar" />
+	
+	    <TextView
+	        android:id="@+id/tvUserName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@id/ivUserAvatar"
+	        android:textSize="12sp"
+	        android:textColor="@color/text_color_grey"/>
+
+	    <TextView
+	        android:id="@+id/tvText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/tvUserName"
+	        android:layout_below="@+id/tvUserName"
+	        android:autoLink="web"
+	        android:layout_marginTop="5dp"
+		    android:layout_marginRight="10dp"
+	        android:background="@drawable/babble_white"
+	        android:textColor="@color/text_color_dark"
+	        android:textSize="13sp" />
+	
+	</RelativeLayout>
+
+</RelativeLayout>

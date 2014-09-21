@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+    
+	<cn.edu.hit.pt.widget.CustomScrollView
+		android:id="@+id/svRefresh"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/bg_color_iron"
+		style="@style/svVerticalBars" >
+   		
+		<LinearLayout
+			android:id="@+id/mcontainer"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingBottom="10dip" >
+            
+		</LinearLayout>
+		
+	</cn.edu.hit.pt.widget.CustomScrollView>
+
+</LinearLayout>

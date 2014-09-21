@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/head_layout"
+    	android:background="@color/bg_color_iron"
+       	android:layout_marginTop="-3dip"
+   		style="@style/svVerticalBars" >
+        
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:background="@color/bg_color_light_grey" >
+			
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="@string/project_which_helps"
+					android:textSize="12sp"
+			    	android:textColor="@color/text_color_deep_grey" />
+					
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.1dp"
+					android:background="@color/border_grey" />
+			    
+			</LinearLayout>
+			
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="15dp"
+				android:background="@color/bg_color_white" >
+					
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:maxLines="1"
+				    android:textSize="16sp"
+				    android:textColor="@color/text_color_dark"
+				    android:text="@string/PullToRefreshView" />
+			    
+			</LinearLayout>
+			
+			<View android:layout_height="0.1dip" android:layout_width="match_parent" android:background="@color/border_grey"/>
+																								
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="15dp"
+				android:background="@color/bg_color_white" >
+					
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:maxLines="1"
+				    android:textSize="16sp"
+				    android:textColor="@color/text_color_dark"
+				    android:text="@string/SlidingMenu" />
+			    
+			</LinearLayout>
+			
+			<View android:layout_height="0.1dip" android:layout_width="match_parent" android:background="@color/border_grey"/>
+																											
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="15dp"
+				android:background="@color/bg_color_white" >
+					
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:maxLines="1"
+				    android:textSize="16sp"
+				    android:textColor="@color/text_color_dark"
+				    android:text="@string/customDialog" />
+					
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="12sp"
+				    android:textColor="@color/text_color_grey"
+				    android:text="@string/antoinevianey" />
+			    
+			</LinearLayout>
+			
+			<View android:layout_height="0.1dip" android:layout_width="match_parent" android:background="@color/border_grey"/>
+																											
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="15dp"
+				android:background="@color/bg_color_white" >
+					
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:maxLines="1"
+				    android:textSize="16sp"
+				    android:textColor="@color/text_color_dark"
+				    android:text="@string/SwipeBackLayout" />
+					
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="12sp"
+				    android:textColor="@color/text_color_grey"
+				    android:text="@string/Issacw0ng" />
+			    
+			</LinearLayout>
+			
+			<View android:layout_height="0.1dip" android:layout_width="match_parent" android:background="@color/border_grey"/>
+																											
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="15dp"
+				android:background="@color/bg_color_white" >
+					
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:maxLines="1"
+				    android:textSize="16sp"
+				    android:textColor="@color/text_color_dark"
+				    android:text="@string/LiteHttpAndOrm" />
+					
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textSize="12sp"
+				    android:textColor="@color/text_color_grey"
+				    android:text="@string/matianyu" />
+			    
+			</LinearLayout>
+			
+			<View android:layout_height="0.1dip" android:layout_width="match_parent" android:background="@color/border_grey"/>
+			
+		</LinearLayout>
+		
+	</ScrollView>
+
+	<RelativeLayout
+		android:id="@+id/head_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		style="@style/ActionBar" >
+
+		<Button
+			android:id="@+id/btnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ActionBarButton"
+			android:layout_alignParentLeft="true"
+			android:background="@drawable/button_return" />
+
+		<TextView
+			android:id="@+id/tvTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/btnReturn"
+			android:layout_centerVertical="true"
+			android:text="@string/special_thanks"
+			style="@style/ActionBarTitle" />
+        
+	</RelativeLayout>
+
+</RelativeLayout>

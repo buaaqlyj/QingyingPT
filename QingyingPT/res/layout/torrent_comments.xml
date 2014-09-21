@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:focusable="true"   
+	android:focusableInTouchMode="true" >
+	
+	<LinearLayout
+		android:id="@+id/replyBox"
+		android:orientation="vertical"
+		android:background="@color/bg_color_white_grey"
+		android:padding="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<EditText
+		    android:id="@+id/etReply"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/edittext_blurred"
+		    android:hint="@string/add_reply"
+		    android:textSize="14sp" />
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right">
+			
+			<Button
+			    android:id="@+id/btnReply"
+			    android:layout_width="60dp"
+			    android:layout_height="36dp"
+			    android:layout_marginTop="6dp"
+			    android:text="@string/text_send"
+			    android:textColor="@color/bg_color_white"
+		        android:background="@drawable/button_blue"
+		        android:visibility="gone" />
+			
+		</LinearLayout>
+		
+	</LinearLayout>
+    
+	<View
+		android:id="@+id/line"
+		android:layout_width="match_parent"
+		android:layout_height="0.1dp"
+		android:background="@color/border_light" />
+	
+	<LinearLayout
+		android:id="@+id/mcontainer"
+		android:orientation="vertical"
+		android:background="@color/bg_color_white_grey"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+	</LinearLayout>
+   
+</LinearLayout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- Tags  -->
+	<item name="tag_id" type="id"></item>
+	<item name="tag_name" type="id"></item>
+	
+	<!-- 软件信息  -->
+	<string name="app_name">清影PT</string>
+	<string name="app_full_name">清影PT For Android</string>
+	<string name="copyright">PT.HIT.EDU.CN</string>
+	
+	<!-- 错误提示  -->
+	<string name="request_flooded">提交过于频繁，请稍后再试</string>
+	<string name="unsupport_client">您使用的客户端不被支持</string>
+	<string name="username_invalid">用户名或邮箱不存在</string>
+	<string name="user_account_unconfirmed">账户尚未确认</string>
+	<string name="password_wrong">密码错误</string>
+	<string name="password_invalid">密码编码出现问题，请与管理员联系</string>
+	<string name="user_disabled">用户已被禁用</string>
+	<string name="user_no_qualification">您没有内测资格</string>
+	<string name="user_login_failed">登录失败</string>
+	<string name="user_login_expire">登录信息过时</string>
+	<string name="user_parked">用户被封存</string>
+	<string name="post_success">发表成功</string>
+	<string name="post_failed">发表失败</string>
+	<string name="no_internet_error">网络错误</string>
+	<string name="no_internet_unreachable">无法访问或网络不稳定</string>
+	<string name="no_internet_disabled">你已设置禁用现在的网络类型</string>
+	<string name="server_not_found">未找到服务器接口，可能是软件版本过低</string>
+	<string name="unknown_error">未知错误</string>
+	<string name="server_error">服务器端发生错误</string>
+	<string name="no_sdcard">未找到SD卡</string>
+	<string name="no_subject_body">主题或者内容不能为空</string>
+	<string name="no_body">内容不能为空</string>
+	<string name="post_flood">提交操作过于频繁，请稍后再试</string>
+	<string name="topic_locked">主题已被锁定</string>
+	<string name="forum_not_found">论坛未找到</string>
+	<string name="topic_not_found">主题未找到</string>
+	<string name="no_right_to_post">无发表权限</string>
+	<string name="no_valid_action">发表类型参数无效</string>
+	<string name="subject_not_valid">主题ID无效</string>
+	<string name="subject_over_length">标题长度超过限制</string>
+	<string name="permission_denied">权限被拒绝</string>
+	<string name="post_no_content">内容不能为空</string>
+	<string name="sql_error">数据库错误</string>
+	<string name="please_try_again">请稍后再试</string>
+	<string name="add_image_failed">添加图片失败</string>
+	<string name="upload_failed">上传失败</string>
+	<string name="upload_file_error">文件存在未知问题</string>
+	<string name="upload_file_oversized">上传文件过大</string>
+	<string name="upload_file_type_error">文件类型不被允许</string>
+	<string name="upload_file_no_count_left">今日上传文件数已达到上限</string>
+	<string name="upload_file_invalid_image">无效的图片文件</string>
+	<string name="upload_file_temp_file_cannot_moved">服务器临时文件发生错误</string>
+	<string name="upload_file_attachment_disabled">附件上传通道已关闭</string>
+	<string name="invalid_user">用户不存在</string>
+	<string name="mail_failed">发送邮件失败</string>
+	<string name="mail_blocked">你的邮件被接收者屏蔽</string>
+	<string name="mail_accept_friend">接收者只接受其好友的消息</string>
+	<string name="mail_accept_nobody">接收者拒绝接受一切消息</string>
+	<string name="picture_load_failed">图片加载失败，请稍候再试！</string>
+	<string name="picture_load_oversized">部分图片由于过大导致加载失败！</string>
+	
+	<!-- 其他提示  -->
+	<string name="no_task">暂时没有任务</string>
+	<string name="no_friends">未找到好友</string>
+	<string name="no_message">暂时没有消息</string>
+	<string name="no_bookmark">暂时没有收藏的种子</string>
+	<string name="no_search_result">没有搜索结果</string>
+	<string name="uploading">正在上传</string>
+	<string name="uploading_percent">正在上传，已上传</string>
+	<string name="upload_success">上传成功</string>
+	<string name="upload_limit">今日共可上传附件</string>
+	<string name="upload_left">还可上传</string>
+	<string name="remote_download_here">远程下载在这里哦</string>
+	   
+	<!-- 下拉刷新插件  -->
+	<string name="pull_to_refresh_pull_label">下拉刷新</string>
+	<string name="pull_to_refresh_release_label">松开后刷新</string>
+	<string name="pull_to_refresh_pull_forward">加载更多</string>
+	<string name="pull_to_refresh_release_forward">松开后加载更多</string>
+	<string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+	<string name="pull_to_refresh_footer_release_label">松开后加载</string>
+	<string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+	<string name="pull_to_refresh_footer_refreshing_label">正在加载\u2026</string>
+	
+	<!-- 登录界面  -->
+	<string name="login">登录</string>
+	<string name="login_loading">登录中&#8230;</string>
+	<string name="input_username">用户名或注册邮箱</string>
+	<string name="input_password">请输入密码</string>
+	
+	<!-- 右侧菜单  -->
+	<string name="home">主页</string>
+	<string name="torrent">种子</string>
+	<string name="forums">论坛</string>
+	<string name="search">搜索</string>
+	<string name="apps">应用</string>
+	<string name="mail">消息</string>
+	<string name="settings">设置</string>
+	
+	<!-- 主程序  -->
+	<string name="software_update">软件升级</string>
+	
+	<!-- 论坛界面  -->
+	<string name="latest_topics">最新主题</string>
+	
+	<!-- 帖子界面  -->
+	<string name="view_topic">查看贴子</string>
+	<string name="floor">楼</string>
+	<string name="floor_lz">楼主</string>
+	<string name="floor_sf">沙发</string>
+	<string name="floor_bd">板凳</string>
+	<string name="floor_db">地板</string>
+	<string name="floor_xsd">下水道</string>
+	<string name="post">发表</string>
+	<string name="reply">回复</string>
+	<string name="posting">正在发表</string>
+	<string name="like">赞</string>
+	<string name="liked">已赞</string>
+	<string name="only_author">只看作者</string>
+	<string name="view_all">查看全部</string>
+	<string name="reverse_order">倒序查看</string>
+	<string name="normal_order">正序查看</string>
+	<string name="select_page">跳转页面</string>
+	<string name="shareTitle">来自清影PT的分享</string>
+	<string name="shareDescr">清影PT资源分享:《</string>
+	<string name="linkAddress">》 链接地址:</string>
+	<string name="shareTopic">清影PT论坛:《</string>
+	
+	<!-- 搜索界面  -->
+	<string name="hot_search">热门搜索词</string>
+	<string name="input_keyword">请输入关键词</string>
+	<string name="no_result">无搜索结果</string>
+	<string name="topic">帖子</string>
+	<string name="user">用户</string>
+	
+	<!-- 设置界面  -->
+	<string name="user_settings">个人设置</string>
+	<string name="receive_offline_message">接收离线消息</string>
+	<string name="no_pic">无图模式</string>
+	<string name="clear_cache">清空图片缓存</string>
+	<string name="about">关于</string>
+	<string name="check_update">检查更新</string>
+	<string name="checking">查询中</string>
+	<string name="checking_new_version">正在查询新版本</string>
+	<string name="no_update">没有更新</string>
+	<string name="is_latest_version">您使用的版本为最新版</string>
+	<string name="clear_cache_query">确定清除图片缓存么？程序可能会在稍后浏览中增加流量消耗。</string>
+	<string name="removing_cache">正在清理缓存</string>
+	<string name="operation_success">操作成功</string>
+	<string name="cache_removed">缓存已清理 </string>
+	<string name="logout">注销当前账号</string>
+	
+	<!-- 消息列表  -->
+	<string name="text_delete_comfirm_1">你确定删除和</string>
+	<string name="text_delete_comfirm_2">之间的消息么？</string>
+	
+	<!-- 用户界面  -->
+	<string name="text_upload_amount">上传量</string>
+	<string name="text_download_amount">下载量</string>
+	<string name="text_ratio">分享率</string>
+	<string name="text_userclass">用户等级</string>
+	<string name="someones_torrents">发布的种子</string>
+	<string name="torrent_total">总共</string>
+	<string name="remove_friend">移除好友</string>
+	<string name="add_friend">添加好友</string>
+	<string name="send_pm">发送消息</string>
+	<string name="self_description">个人简介</string>
+	<string name="no_description">还没有相关描述</string>
+	<string name="no_torrent">暂时没有发布的种子</string>
+	<string name="user_privacy_strong">用户隐私较强，无法查看</string>
+	
+	<!-- 发表帖子界面  -->
+	<string name="post_topic">发表帖子</string>
+	<string name="subject">帖子主题</string>
+	<string name="body">正文内容</string>
+	<string name="default_forum">聊天灌水区</string>
+	
+	<!-- 种子界面  -->
+	<string name="sp_normal">普通</string>
+	<string name="sp_free">免费</string>
+	<string name="sp_2x">双倍上传</string>
+	<string name="sp_2xfree">免费&amp;双倍上传</string>
+	<string name="sp_50">50%下载量</string>
+	<string name="sp_2x50">50%下载量&amp;双倍上传</string>
+	<string name="sp_30">30%下载量</string>
+	<string name="seeders">做种人数</string>
+	<string name="leechers">下载人数</string>
+	<string name="add_reply">添加回复</string>
+	<string name="no_othercopy">暂时没有该资源的其他版本</string>
+	<string name="bookmark">收藏</string>
+	<string name="bookmark_added">收藏已添加</string>
+	<string name="remotedownload_added">添加远程下载已添加</string>
+	<string name="bookmark_removed">收藏已取消</string>
+	<string name="remotedownload_removed">添加远程下载已取消</string>
+	<string name="in_peer">正在传输</string>
+	<string name="seeding">正在做种</string>
+	<string name="leeching">正在下载</string>
+	<string name="already_finished">已完成</string>
+	<string name="already_uploaded">已上传</string>
+	<string name="already_downloaded">已下载</string>
+	<string name="unstarted">尚未开始</string>
+	<string name="all_tasks">全部任务</string>
+	<string name="torrent_categories">资源分类</string>
+	<string name="message_delete_favorite">你确定取消收藏么？</string>
+	<string name="message_delete_failed">删除失败，请重试！</string>
+	<string name="latest_torrent">最新种子</string>
+	<string name="torrent_description">资源简介</string>
+	<string name="other_copy">其他版本</string>
+	<string name="torrent_comments">种子评论</string>
+	<string name="uploaded_at">上传于</string>
+	<string name="torrent_size">资源大小</string>
+	<string name="myFavorites">我的收藏</string>
+	
+	<!-- 用户资料设定 -->
+	<string name="change_avatar">更换头像</string>
+	<string name="list_not_valid">列表尚未加载完毕</string>
+	<string name="save_success">保存成功</string>
+	<string name="save_failed">保存失败，请重试</string>
+	<string name="select_local_image">选择本地图片</string>
+	<string name="decribe_yourself">描述一下自己吧</string>
+	
+	<!-- 远程下载  -->
+	<string name="remoteDownload">远程下载</string>
+	<string name="howtoRemoteDownload">如何开启置远程下载功能?</string>
+	<string name="deleteRemoteDownload">你确定删除远程任务么？已经开始下载的任务文件不会被删除。</string>
+	
+	<!-- 好友列表 -->
+	<string name="contacts">好友列表</string>
+	<string name="search_users">搜索用户</string>
+	
+	<!-- 群聊 -->
+	<string name="shoutbox">群聊区</string>
+	
+	<!-- 签到 -->
+	<string name="checkin">每日签到</string>
+	<string name="checkin_right_now">立即签到</string>
+	<string name="checkin_disturbed">您已断签</string>
+	<string name="checkin_please_buy_card">请购买补签卡以继续签到</string>
+	<string name="already_checkin">已签到</string>
+	<string name="today_already_checkin">今日已签到</string>
+	<string name="text_get">获得</string>
+	<string name="text_get_mana_point">点魔力值</string>
+	<string name="checkin_list">签到英雄榜</string>
+	
+	<!-- 二维码 -->
+	<string name="qrcode">二维码</string>
+	<string name="make_qrcode">制作二维码</string>
+	<string name="invalid_qrcode_text">无效的传入文本，请重试</string>
+	<string name="generate_qrcode_failed">二维码制作失败，请重试</string>
+	<string name="please_put_qrcode_in_rect">请将二维码至于取景框中</string>
+	<string name="save_qrcode">保存二维码</string>
+	<string name="qrcode_saved">二维码已保存到</string>
+	<string name="my_qrcode">我的二维码</string>
+	
+	<!-- 问题反馈 -->
+	<string name="make_report">问题反馈</string>
+	<string name="version">版本</string>
+	<string name="cellphone_model">手机型号</string>
+	<string name="problem_descr">问题描述</string>
+	<string name="report_success">反馈提交成功</string>
+	<string name="cellphone_model_null">手机型号不能为空</string>
+	<string name="problem_descr_null">问题描述不能为空</string>
+	
+	<!-- 特别感谢 -->
+	<string name="special_thanks">特别感谢</string>
+	<string name="project_which_helps">感谢以下开源作者与项目</string>
+	
+	<!-- 帮助文档 -->
+	<string name="document">帮助文档</string>
+	<string name="make_donations">捐助我们</string>
+	
+	<!-- Flash Player -->
+	<string name="loading_failed">加载失败</string>
+	<string name="invalid_url">视频地址无效</string>
+	<string name="loading_flash">正在加载Flash插件</string>
+	<string name="no_flash_plugin">未安装Flash插件，请下载安装后重试</string>
+	
+	<!-- 发表工具箱  -->
+	<string name="at">大召唤术</string>
+	<string name="add_image">添加图片</string>
+	<string name="cancel_add_photo">取消添加图片</string>
+	<string name="at_more_than_ten">请不要在同一楼层\@超过十个人</string>
+	
+	<!-- 软件升级 -->
+	<string name="updating">正在更新</string>
+	<string name="text_update">升级</string>
+	<string name="query_update_failed">查询升级失败</string>
+	<string name="msg_update">有新的版本可供升级，是否升级？</string>
+	<string name="updating_and_downloading">正在更新，已下载</string>
+	
+	<!-- 通知栏提示 -->
+	<string name="you_have">你有</string>
+	<string name="new_unread_message">条未读消息</string>
+	
+	<!-- 单位 -->
+	<string name="infinite">无穷</string>
+	<string name="week">周</string>
+	<string name="day">天</string>
+	<string name="num">第</string>
+	<string name="page">页</string>
+	<string name="unit">个</string>
+	<string name="comma">，</string>
+	
+	<!-- 通用词 -->
+	<string name="loading">正在加载</string>
+	<string name="anonymous">匿名用户</string>
+	<string name="share_to">分享到</string>
+	<string name="today">今天</string>
+	<string name="gender">性别</string>
+	<string name="from">来自</string>
+	<string name="country">国家</string>
+	<string name="school">学校</string>
+	<string name="none">无</string>
+	<string name="male">男</string>
+	<string name="female">女</string>
+	<string name="unknown">未知</string>
+	<string name="take_photo">拍照</string>
+	<string name="text_ok">确定</string>
+	<string name="text_cancel">取消</string>
+	<string name="text_delete">删除</string>
+	<string name="text_send">发送</string>
+	<string name="please_wait">请稍等</string>
+	<string name="text_click_resend">单击此处重新发送</string>
+	
+</resources>
