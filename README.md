@@ -6,10 +6,10 @@
 
 依赖
 -----------------------------------
-*[SwipeBackLayout](https://github.com/Issacw0ng/SwipeBackLayout)<br />
-*[LiteHttp](https://github.com/litesuits/android-lite-http)<br />
-*[LiteOrm](https://github.com/litesuits/android-lite-orm)<br />
-*内已附带Google Zxing，如有需求请自行替换新版本<br />
+* [SwipeBackLayout](https://github.com/Issacw0ng/SwipeBackLayout)<br />
+* [LiteHttp](https://github.com/litesuits/android-lite-http)<br />
+* [LiteOrm](https://github.com/litesuits/android-lite-orm)<br />
+* 内已附带Google Zxing，如有需求请自行替换新版本<br />
 
 说明
 -----------------------------------
